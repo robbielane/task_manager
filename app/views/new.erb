@@ -1,6 +1,15 @@
-<form action="/tasks" method="post">
-  <p>Enter a new task:</p>
-  <input type='text' name='task[title]'/><br/>
-  <textarea name='task[description]'></textarea><br/>
-  <input type='submit'/>
-</form>
+<div class="container">
+  <div class="col-sm-4 col-sm-offset-4">
+    <form action="/tasks" method="post">
+      <p class="text-center">Enter a new task:</p>
+      <div class="form-group">
+        <label for="tasktitle">Task Title</label>
+        <input class="form-control" type='text' name='task[title]' id="tasktitle"/><br/>
+        <label for="taskdescription">Task Description</label>
+        <textarea class="form-control" id="taskdescription" name='task[description]'></textarea><br/>
+        <input class="btn btn-defualt pull-right" type='submit'/>
+      </div>
+    </form>
+
+  </div>
+</div>
